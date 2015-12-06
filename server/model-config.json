@@ -31,5 +31,9 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "familyMember": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
