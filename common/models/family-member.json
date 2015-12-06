@@ -1,0 +1,35 @@
+{
+  "name": "familyMember",
+  "plural": "familyMembers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "spouse": {
+      "type": "hasOne",
+      "model": "familyMember",
+      "foreignKey": "familyMemberId"
+    },
+    "children": {
+      "type": "hasMany",
+      "model": "familyMember",
+      "foreignKey": "familyMemberId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
