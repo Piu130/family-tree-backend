@@ -6,6 +6,9 @@
   "options": {
     "validateUpsert": true
   },
+  "mongodb": {
+    "collection": "familyMember"
+  },
   "properties": {
     "firstName": {
       "type": "string"
@@ -15,20 +18,23 @@
     },
     "birthday": {
       "type": "date"
+    },
+    "order": {
+      "type": "integer"
     }
   },
   "validations": [],
   "relations": {
     "spouse": {
       "type": "hasOne",
-      "model": "familyMember",
+      "model": "spouse",
       "foreignKey": "familyMemberId"
     },
     "children": {
       "type": "hasMany",
-      "model": "familyMember",
-      "foreignKey": "familyMemberId"
-    }
+      "model": "children",
+      "foreignKey": "childrenId"
+    }      
   },
   "acls": [],
   "methods": {}

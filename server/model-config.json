@@ -35,5 +35,13 @@
   "familyMember": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "spouse": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "children": {
+    "dataSource": "mongodb",
+    "public": false
   }
 }
