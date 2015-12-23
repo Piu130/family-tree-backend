@@ -10,13 +10,20 @@
     "collection": "familyMember"
   },
   "properties": {
-    "firstName": {
-      "type": "string"
+    "firstNames": {
+      "type": [
+        "string"
+      ]
     },
-    "lastName": {
-      "type": "string"
+    "lastNames": {
+      "type": [
+        "string"
+      ]
     },
     "birthday": {
+      "type": "date"
+    },
+    "dayOfDeath": {
       "type": "date"
     },
     "order": {
