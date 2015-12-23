@@ -41,7 +41,12 @@
       "type": "hasMany",
       "model": "children",
       "foreignKey": "childrenId"
-    }      
+    },
+    "info": {
+      "type": "hasOne",
+      "model": "familyMemberInfo",
+      "foreignKey": "familyMemberId"
+    }
   },
   "acls": [],
   "methods": {}
