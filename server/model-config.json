@@ -43,5 +43,13 @@
   "children": {
     "dataSource": "mongodb",
     "public": false
+  },
+  "container": {
+    "dataSource": "file",
+    "public": true
+  },
+  "familyMemberInfo": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
