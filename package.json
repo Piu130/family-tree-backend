@@ -4,6 +4,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node .",
+    "prestart": "npm install --no-bin-link",
     "pretest": "jshint ."
   },
   "dependencies": {
@@ -15,6 +16,7 @@
     "loopback-component-storage": "^1.6.1",
     "loopback-connector-mongodb": "^1.13.1",
     "loopback-datasource-juggler": "^2.39.0",
+    "kerberos": "^0.0.17",
     "serve-favicon": "^2.0.1"
   },
   "devDependencies": {
