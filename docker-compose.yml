@@ -1,3 +1,4 @@
+# in development
 backend:
   image: node:5.4-onbuild
   ports:
