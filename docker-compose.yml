@@ -4,11 +4,9 @@ backend:
   ports:
    - "3000:3000"
   volumes:
-   - ../family-tree-backend:/code
+   - .:/code
   working_dir: "/code"
   links:
-    - mongodb
+   - mongodb
 mongodb:
   image: mongo:3.2
-  ports:
-   - "27017:27017"
