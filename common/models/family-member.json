@@ -27,7 +27,7 @@
       "type": "date"
     },
     "order": {
-      "type": "integer"
+      "type": "number"
     }
   },
   "validations": [],
