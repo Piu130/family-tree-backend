@@ -5,7 +5,8 @@
   },
   "mongodb": {
     "name": "mongodb",
-    "connector": "mongodb"
+    "connector": "mongodb",
+    "url": "mongodb://mongodb"
   },
   "file": {
     "name": "file",
