@@ -51,5 +51,9 @@
   "familyMemberInfo": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "schemaForm": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
