@@ -1,0 +1,17 @@
+{
+  "name": "user",
+  "plural": "users",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mongodb": {
+    "collection": "familyMember"
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
