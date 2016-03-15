@@ -1,5 +1,5 @@
 backend:
-  image: node:5.4-onbuild
+  image: node:5.8-onbuild
   ports:
    - "3001:3001"
   volumes:
