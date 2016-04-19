@@ -11,16 +11,17 @@
     "compression": "^1.6.1",
     "cors": "^2.7.1",
     "loopback": "^2.27.0",
-    "loopback-boot": "^2.17.0",
+    "loopback-boot": "^2.18.1",
     "loopback-component-explorer": "^2.4.0",
     "loopback-component-storage": "^1.7.0",
     "loopback-connector-mongodb": "^1.13.3",
-    "loopback-datasource-juggler": "^2.45.2",
+    "loopback-datasource-juggler": "^2.46.0",
     "kerberos": "^0.0.19",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
-    "jshint": "^2.9.1"
+    "jshint": "^2.9.1",
+    "npm-check-updates": "^2.6.2"
   },
   "repository": {
     "type": "",
