@@ -6,6 +6,7 @@
   "mongodb": {
     "name": "mongodb",
     "connector": "mongodb",
+    "database": "familytree",
     "url": "mongodb://mongodb"
   },
   "file": {
