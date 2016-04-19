@@ -1,5 +1,5 @@
 backend:
-  image: node:5.8-onbuild
+  image: node:5.10-onbuild
   ports:
    - "3001:3001"
   volumes:
@@ -11,3 +11,5 @@ mongodb:
   image: mongo:3.2
   expose:
    - 27017
+  ports:
+   - "27017:27017"
