@@ -6,28 +6,36 @@
     "validateUpsert": true
   },
   "properties": {
-    "profession": {
-      "type": "string"
+    "birthday": {
+      "type": "date"
     },
     "size": {
       "type": "number"
+    },
+    "apprenticeship": {
+      "type": "string"
+    },
+    "studies": {
+      "type": "string"
+    },
+    "profession": {
+      "type": "string"
+    },
+    "hobbies": {
+      "type": [
+        "string"
+      ]
+    },
+    "favouriteColor": {
+      "type": "string"
+    },
+    "childhoodDream": {
+      "type": "string"
     }
   },
   "validations": [],
   "relations": {},
   "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    }
   ],
   "methods": {}
 }
