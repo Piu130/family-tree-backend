@@ -7,11 +7,12 @@
     "validateUpsert": true
   },
   "mongodb": {
-    "collection": "familyMember"
+    "collection": "user"
   },
   "properties": {},
   "validations": [],
   "relations": {},
-  "acls": [],
+  "acls": [
+  ],
   "methods": {}
 }
