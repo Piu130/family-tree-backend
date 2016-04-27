@@ -12,14 +12,20 @@
     "size": {
       "type": "number"
     },
-    "apprenticeship": {
-      "type": "string"
+    "apprenticeships": {
+      "type": [
+        "string"
+      ]
     },
     "studies": {
-      "type": "string"
+      "type": [
+        "string"
+      ]
     },
-    "profession": {
-      "type": "string"
+    "professions": {
+      "type": [
+        "string"
+      ]
     },
     "hobbies": {
       "type": [
