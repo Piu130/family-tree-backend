@@ -32,7 +32,7 @@
     "spouse": {
       "type": "hasOne",
       "model": "spouse",
-      "foreignKey": "familyMemberId"
+      "foreignKey": "spouseId"
     },
     "children": {
       "type": "hasMany",
@@ -46,6 +46,36 @@
     }
   },
   "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "__create__info"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "__get__info"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "__get__info"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "__update__info"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "__destroy__info"
+    }
   ],
   "methods": {}
 }
