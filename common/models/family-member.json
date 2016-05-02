@@ -37,7 +37,7 @@
     "children": {
       "type": "hasMany",
       "model": "children",
-      "foreignKey": "childrenId"
+      "foreignKey": "parentId"
     },
     "info": {
       "type": "hasOne",
