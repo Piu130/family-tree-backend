@@ -2,6 +2,7 @@
   "name": "family-tree-backend",
   "version": "1.0.0",
   "main": "server/server.js",
+  "private": true,
   "scripts": {
     "start": "node .",
     "prestart": "npm install --no-bin-link",
@@ -22,10 +23,6 @@
   "devDependencies": {
     "jshint": "^2.9.1",
     "npm-check-updates": "^2.6.2"
-  },
-  "repository": {
-    "type": "",
-    "url": ""
   },
   "description": "family-tree-backend"
 }
