@@ -59,6 +59,12 @@
       "principalId": "$authenticated",
       "permission": "ALLOW",
       "accessType": "READ"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "accessType": "WRITE"
     }
   ],
   "methods": {}

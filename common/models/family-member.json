@@ -50,18 +50,18 @@
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "DENY",
+      "accessType": "WRITE"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
       "property": "__create__info"
     },
     {
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "DENY",
-      "property": "__get__info"
-    },
-    {
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW",
       "property": "__get__info"
     },
     {
@@ -75,6 +75,30 @@
       "principalId": "$everyone",
       "permission": "DENY",
       "property": "__destroy__info"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "__get__info"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "accessType": "WRITE"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "property": "__create__info"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "property": "__update__info"
     }
   ],
   "methods": {}
