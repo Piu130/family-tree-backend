@@ -8,7 +8,7 @@ backend:
   links:
    - mongodb
 mongodb:
-  image: mongo:3.2
+  image: mongo:3.3
   expose:
    - 27017
   ports:
