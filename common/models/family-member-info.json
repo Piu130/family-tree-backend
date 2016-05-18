@@ -6,6 +6,9 @@
     "validateUpsert": true
   },
   "properties": {
+    "gender": {
+      "type": "string"
+    },
     "birthday": {
       "type": "date"
     },

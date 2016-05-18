@@ -20,9 +20,6 @@
         "string"
       ]
     },
-    "gender": {
-      "type": "string"
-    },
     "dayOfDeath": {
       "type": "date"
     },
