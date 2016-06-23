@@ -5,11 +5,13 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - .:/code
+      - ..:/code
     working_dir: "/code"
     links:
       - mongodb
-    env_file: .env
+    env_file:
+      - .env
+      - strongloop/.env
   mongodb:
     image: mongo:3.3
     expose:
