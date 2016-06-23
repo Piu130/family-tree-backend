@@ -15,7 +15,5 @@ services:
   mongodb:
     image: mongo:3.3
     command: mongod -f /etc/mongo.conf
-    expose:
-      - 27017
     volumes:
       - ./mongo/mongo.conf:/etc/mongo.conf
