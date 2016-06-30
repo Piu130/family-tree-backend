@@ -1,4 +1,5 @@
 version: '2'
+
 services:
   strongloop:
     image: node:5.11-onbuild
@@ -7,13 +8,23 @@ services:
     volumes:
       - ..:/code
     working_dir: "/code"
-    links:
+    depends_on:
       - mongodb
     env_file:
       - .env
       - strongloop/.env
   mongodb:
-    image: mongo:3.3
-    command: mongod -f /etc/mongo.conf
+    build:
+      context: .
+      dockerfile: mongo/Dockerfile
+    command: -f /etc/mongo.conf
     volumes:
       - ./mongo/mongo.conf:/etc/mongo.conf
+      - data:/data/db
+    env_file:
+      - .env
+      - mongo/.env
+
+volumes:
+  data:
+    driver: local
