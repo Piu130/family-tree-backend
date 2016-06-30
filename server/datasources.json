@@ -5,9 +5,9 @@
   },
   "mongodb": {
     "name": "mongodb",
+    "host": "mongodb",
     "connector": "mongodb",
-    "database": "familytree",
-    "url": "mongodb://mongodb"
+    "database": "familytree"
   },
   "file": {
     "name": "file",
