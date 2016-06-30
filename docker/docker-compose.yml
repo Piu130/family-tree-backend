@@ -17,6 +17,8 @@ services:
       - strongloop/.env
     user: app
     read_only: true
+    security_opt:
+      - no-new-privileges
 
   mongodb:
     build:
@@ -30,6 +32,8 @@ services:
       - .env
       - mongo/.env
     user: mongodb
+    security_opt:
+      - no-new-privileges
 
 volumes:
   data:
