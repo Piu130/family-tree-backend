@@ -9,19 +9,22 @@ services:
       - "3001:3001"
     volumes:
       - ..:/usr/src/app
+      - /home/app
     depends_on:
       - mongodb
     env_file:
       - .env
       - strongloop/.env
     user: app
+    read_only: true
+
   mongodb:
     build:
       context: .
       dockerfile: mongo/Dockerfile
     command: -f /etc/mongo.conf
     volumes:
-      - ./mongo/mongo.conf:/etc/mongo.conf
+      - ./mongo/mongo.conf:/etc/mongo.conf:ro
       - data:/data/db
     env_file:
       - .env
