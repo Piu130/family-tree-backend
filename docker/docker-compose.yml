@@ -2,7 +2,7 @@ version: '2'
 
 services:
   strongloop:
-    image: node:5.11-onbuild
+    image: node:6.2-onbuild
     ports:
       - "3001:3001"
     volumes:
