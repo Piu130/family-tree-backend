@@ -2,17 +2,19 @@ version: '2'
 
 services:
   strongloop:
-    image: node:6.2-onbuild
+    build:
+      context: .
+      dockerfile: strongloop/Dockerfile
     ports:
       - "3001:3001"
     volumes:
-      - ..:/code
-    working_dir: "/code"
+      - ..:/usr/src/app
     depends_on:
       - mongodb
     env_file:
       - .env
       - strongloop/.env
+    user: app
   mongodb:
     build:
       context: .
@@ -24,6 +26,7 @@ services:
     env_file:
       - .env
       - mongo/.env
+    user: mongodb
 
 volumes:
   data:
