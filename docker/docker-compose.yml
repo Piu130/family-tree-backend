@@ -1,6 +1,7 @@
 version: '2'
 
 services:
+
   strongloop:
     build:
       context: .
@@ -9,14 +10,12 @@ services:
       - "3001:3001"
     volumes:
       - ..:/usr/src/app
-      - /home/app
     depends_on:
       - mongodb
     env_file:
       - .env
       - strongloop/.env
     user: app
-    read_only: true
     security_opt:
       - no-new-privileges
 
