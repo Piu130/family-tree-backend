@@ -13,6 +13,6 @@
     "name": "file",
     "connector": "loopback-component-storage",
     "provider": "filesystem",
-    "root": "tmp/storage"
+    "root": "/data/strongloop_containers"
   }
 }

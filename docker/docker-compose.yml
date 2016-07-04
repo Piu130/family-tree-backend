@@ -10,6 +10,7 @@ services:
       - "3001:3001"
     volumes:
       - ..:/usr/src/app
+      - strongloop_containers:/data/strongloop_containers
     depends_on:
       - mongodb
     env_file:
@@ -26,7 +27,7 @@ services:
     command: -f /etc/mongo.conf
     volumes:
       - ./mongo/mongo.conf:/etc/mongo.conf:ro
-      - data:/data/db
+      - mongo_data:/data/db
     env_file:
       - .env
       - mongo/.env
@@ -35,5 +36,7 @@ services:
       - no-new-privileges
 
 volumes:
-  data:
+  mongo_data:
+    driver: local
+  strongloop_containers:
     driver: local
